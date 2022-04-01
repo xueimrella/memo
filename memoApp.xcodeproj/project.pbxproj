@@ -13,6 +13,7 @@
 		080A39F827F6DA3200CA6F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 080A39F727F6DA3200CA6F9C /* Assets.xcassets */; };
 		080A39FB27F6DA3200CA6F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080A39F927F6DA3200CA6F9C /* LaunchScreen.storyboard */; };
 		080A39FE27F6DA3200CA6F9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 080A39FD27F6DA3200CA6F9C /* main.m */; };
+		080A3A0727F6ECDA00CA6F9C /* Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = 080A3A0627F6ECDA00CA6F9C /* Memo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		080A39FA27F6DA3200CA6F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		080A39FC27F6DA3200CA6F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		080A39FD27F6DA3200CA6F9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		080A3A0527F6ECDA00CA6F9C /* Memo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Memo.h; sourceTree = "<group>"; };
+		080A3A0627F6ECDA00CA6F9C /* Memo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Memo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		080A39EA27F6DA3100CA6F9C /* memoApp */ = {
 			isa = PBXGroup;
 			children = (
+				080A3A0427F6ECA900CA6F9C /* Model */,
 				080A39EB27F6DA3100CA6F9C /* AppDelegate.h */,
 				080A39EC27F6DA3100CA6F9C /* AppDelegate.m */,
 				080A39EE27F6DA3100CA6F9C /* SceneDelegate.h */,
@@ -69,6 +73,15 @@
 				080A39FD27F6DA3200CA6F9C /* main.m */,
 			);
 			path = memoApp;
+			sourceTree = "<group>";
+		};
+		080A3A0427F6ECA900CA6F9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				080A3A0527F6ECDA00CA6F9C /* Memo.h */,
+				080A3A0627F6ECDA00CA6F9C /* Memo.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +157,7 @@
 				080A39ED27F6DA3100CA6F9C /* AppDelegate.m in Sources */,
 				080A39FE27F6DA3200CA6F9C /* main.m in Sources */,
 				080A39F027F6DA3100CA6F9C /* SceneDelegate.m in Sources */,
+				080A3A0727F6ECDA00CA6F9C /* Memo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
