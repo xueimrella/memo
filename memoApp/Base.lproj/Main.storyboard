@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--MEMO-->
         <scene sceneID="Vmh-eX-l70">
             <objects>
                 <tableViewController id="y2B-cu-G1v" sceneMemberID="viewController">
@@ -51,7 +51,11 @@
                             <outlet property="delegate" destination="y2B-cu-G1v" id="d49-vk-hPc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Oy0-yo-kiJ"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="MEMO" id="Oy0-yo-kiJ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="jYf-2m-6eK"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yz7-kK-l6Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,8 +65,8 @@
         <scene sceneID="oll-sW-kII">
             <objects>
                 <navigationController id="Z7w-Qe-SFq" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R7g-Hh-CBl">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="R7g-Hh-CBl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
