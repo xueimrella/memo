@@ -48,8 +48,6 @@
 		080A39DF27F6DA3100CA6F9C = {
 			isa = PBXGroup;
 			children = (
-				080A3A0827F6EF5200CA6F9C /* MemoListTableViewController.h */,
-				080A3A0927F6EF5200CA6F9C /* MemoListTableViewController.m */,
 				080A39EA27F6DA3100CA6F9C /* memoApp */,
 				080A39E927F6DA3100CA6F9C /* Products */,
 			);
@@ -67,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				080A3A0427F6ECA900CA6F9C /* Model */,
+				080A3A0827F6EF5200CA6F9C /* MemoListTableViewController.h */,
+				080A3A0927F6EF5200CA6F9C /* MemoListTableViewController.m */,
 				080A39EB27F6DA3100CA6F9C /* AppDelegate.h */,
 				080A39EC27F6DA3100CA6F9C /* AppDelegate.m */,
 				080A39EE27F6DA3100CA6F9C /* SceneDelegate.h */,
