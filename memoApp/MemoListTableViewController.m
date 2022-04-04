@@ -8,6 +8,12 @@
 #import "MemoListTableViewController.h"
 #import "Memo.h"
 
+@interface MemoListTableViewController()
+
+@property (strong, nonatomic) NSDateFormatter * formmater;
+
+@end
+
 @implementation MemoListTableViewController
 
 - (void)viewDidLoad {

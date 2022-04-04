@@ -63,17 +63,36 @@
             </objects>
             <point key="canvasLocation" x="-1662" y="-271"/>
         </scene>
-        <!--View Controller-->
+        <!--새 메모-->
         <scene sceneID="Uw4-uY-NZm">
             <objects>
                 <viewController id="VWl-pc-MEe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v7w-JI-8Cw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fuu-fB-alk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3HW-FL-Q0v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fuu-fB-alk" firstAttribute="trailing" secondItem="3HW-FL-Q0v" secondAttribute="trailing" id="13l-dx-9vq"/>
+                            <constraint firstItem="fuu-fB-alk" firstAttribute="top" secondItem="v7w-JI-8Cw" secondAttribute="top" id="Qmt-5y-YTy"/>
+                            <constraint firstItem="fuu-fB-alk" firstAttribute="leading" secondItem="3HW-FL-Q0v" secondAttribute="leading" id="f4j-ZF-dev"/>
+                            <constraint firstItem="fuu-fB-alk" firstAttribute="bottom" secondItem="3HW-FL-Q0v" secondAttribute="bottom" id="jhp-Qg-mLF"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bug-Z8-zYp"/>
+                    <navigationItem key="navigationItem" title="새 메모" id="bug-Z8-zYp">
+                        <barButtonItem key="leftBarButtonItem" title="취소" id="Rd5-0Z-h7g"/>
+                        <barButtonItem key="rightBarButtonItem" title="저장" id="pkQ-HC-Uvc"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFs-SR-3KO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,6 +134,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
