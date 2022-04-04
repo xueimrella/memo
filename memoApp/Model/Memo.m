@@ -8,7 +8,7 @@
 #import "Memo.h"
 
 @implementation Memo
-
+//@synthesize content, insertDate;
 -(instancetype)initWithContent:(NSString *) content{
     self = [super init];
     if (self != nil){

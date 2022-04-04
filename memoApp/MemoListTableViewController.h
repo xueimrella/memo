@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MemoListTableViewController : UITableViewController
 
+@property (strong, nonatomic) NSDateFormatter * formmater;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,14 +8,15 @@
 #import "MemoListTableViewController.h"
 #import "Memo.h"
 
-@interface MemoListTableViewController ()
-
-@end
-
 @implementation MemoListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.formmater = [[NSDateFormatter alloc]init];
+    self.formmater.dateStyle = NSDateFormatterLongStyle;
+    self.formmater.timeStyle = NSDateFormatterNoStyle;
+    self.formmater.locale = [NSLocale localeWithLocaleIdentifier:@"Ko_kr"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -36,7 +37,7 @@
     
     Memo *target = [[Memo dummyMemoList] objectAtIndex:indexPath.row];
     cell.textLabel.text = target.content;
-    cell.detailTextLabel.text = target.insertDate.description;
+    cell.detailTextLabel.text = [self.formmater stringFromDate:target.insertDate];
     
     return cell;
 }
